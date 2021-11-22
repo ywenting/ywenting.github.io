@@ -1,0 +1,266 @@
+
+body {
+	background: #b2dad4;
+	color: #67523e;
+  }
+  
+  .container {
+	background: #fff;
+	max-width: 400px;
+	margin: 100px auto;
+	padding: 20px 30px;
+	box-shadow: 0 4px 2px 1px rgba(0,0,0,0.05);
+  }
+  
+  h1 {
+	font-style: italic;
+	text-align: center;
+	border-bottom: 1px solid #67523e;
+	letter-spacing: 1px;
+  }
+  
+  ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  li {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+  }
+  
+  li label {
+	width: 370px;
+	padding: 13px 0 13px 20px;
+  }
+  
+  
+  li:hover {
+	background: #9c9c9c;
+  }
+  
+  li input[type="checkbox"],
+  li label {
+	cursor: pointer;
+  }
+  
+  li input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+  }
+  
+  li input[type="checkbox"]:checked + label {
+	text-decoration: line-through;
+	opacity: 0.8;
+  }
+  
+  li small {
+	font-size: 14px;
+	color: #777;
+	background: #eee;
+	padding: 2px 6px;
+	margin-left: 5px;
+	border-radius: 10px;
+  }
+  
+  .highlighted-badge {
+	background: #615e5a;
+	color: #96661e;
+  }
+
+    .button {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	  }
+  
+  
+  #SpringButton, #SummerButton, #AutumnButton, #WinterButton {
+	align-items: center;
+	width: 200px;
+	display: block;
+	margin: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #bb926c;
+	padding: 10px 18px;
+	border-radius: 21px;
+	white-space: nowrap;
+	background-color: transparent;
+	background-image: radial-gradient(#8b8b8b 0,#afafaf 75%,transparent 0,transparent 100%);
+	background-repeat: no-repeat;
+	background-size: 0 0;
+	background-position: 50% 50%;
+	border: 1px solid #67523e;
+	transition: 0.2s;
+	cursor: pointer;
+  }
+  
+  #SpringButton:hover {
+	color: #e4ffca;
+	background-size: 105% 150%;
+  }
+  #SummerButton:hover {
+	color: #fff177;
+	background-size: 105% 150%;
+  }
+  #AutumnButton:hover {
+	color: #ffe7c7;
+	background-size: 105% 150%;
+  }
+  #WinterButton:hover {
+	color: #f5f7fc;
+	background-size: 105% 150%;
+  }
+  
+  
+  .spring-mode {
+	background: rgb(101, 145, 109);
+	color: rgb(43, 61, 14);
+  }
+  
+  .spring-mode .container {
+	background: rgb(216, 218, 121);
+  }
+  
+  .spring-mode h1 {
+	color: whitesmoke;
+  }
+
+  .summer-mode {
+	background: rgb(119, 216, 240);
+	color: rgb(71, 46, 31);
+  }
+  
+  .summer-mode .container {
+	background: rgb(226, 163, 46);
+  }
+  
+  .summer-mode h1 {
+	color: rgb(252, 231, 199);
+  }
+
+  .autumn-mode {
+	background: rgb(202, 176, 61);
+	color: rgb(252, 220, 200);
+  }
+  
+  .autumn-mode .container {
+	background: rgb(151, 107, 50);
+  }
+  
+  .autumn-mode h1 {
+	color: whitesmoke;
+  }
+  .winter-mode {
+	background: rgb(147, 190, 240);
+	color: rgb(233, 249, 255);
+  }
+  
+  .winter-mode .container {
+	background: rgb(45, 57, 71);
+  }
+  
+  .winter-mode h1 {
+	color: rgb(116, 129, 156);
+  }
+
+  * {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  }
+
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+
+  

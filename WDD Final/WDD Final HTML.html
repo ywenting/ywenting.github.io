@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="Assets/WDD final.css">
+      <title>WDD Final Project</title>
+    </head>
+    <body>
+    
+      <main class="container">
+        
+
+        <h1> <p style="font-family:'Courier New'">Season Vibes</p> </h1>  
+        <ul>
+          <li>
+            <input type="checkbox" id="item1" />
+            <label for="item1"> <p style="font-family:'Courier New'"> Read a book </p> </label>
+          </li>
+          <li>
+            <input type="checkbox" id="item2" />
+            <label for="item2"> <p style="font-family:'Courier New'">Watch a movie with friends </p></label>
+          </li>
+          <li>
+            <input type="checkbox" id="item3" />
+            <label for="item3"> <p style="font-family:'Courier New'">Learn to cook a meal</p></label>
+          </li>
+          <li>
+            <input type="checkbox" id="item4" />
+            <label for="item4"> <p style="font-family:'Courier New'">Relax with family </p></label>
+          </li>
+          <li>
+            <input type="checkbox" id="item5" />
+            <label for="item5"> <p style="font-family:'Courier New'">Visit an old firend </p></label>
+          </li>
+          <li>
+            <input type="checkbox" id="item6" />
+            <label for="item6"> <p style="font-family:'Courier New'">Take a walk along the coast </p></label>
+          </li>
+          <li>
+            <input type="checkbox" id="item7" />
+            <label for="item7"> <p style="font-family:'Courier New'">Learn a new skill </p></label>
+          </li>
+        </ul>
+      </main>
+      <div class="buttonlist">
+        <ul class="button">
+            <button id="SpringButton">Spring Mode</button>
+            <button id="SummerButton">Summer Mode</button>
+            <button id="AutumnButton">Autumn Mode</button>
+            <button id="WinterButton">Winter Mode</button>
+        </ul>
+       </div>
+
+       <div class="slideshow-container">
+
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Assets/Img/book1.png" style="width:40%">
+          <div class="text">Book Recommendation</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Assets/Img/book2.png" style="width:40%">
+          <div class="text">Book Recommendation</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Assets/Img/book3.png" style="width:40%">
+          <div class="text">Book Recommendation</div>
+        </div>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+      <script src="Assets/WDD Final.js"></script>
+    </body>
+    </html>
+    
